@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Carlhenlia </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;700&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+     <section class="login-page-container"> <div class="wrapper active-popup"> <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required />
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required />
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                 
+                    </div>
+                </form>
+            </div>
+    </section>
+     <nav class="navbar">
+        <ul>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#contact">Kontak</a></li>
+             <li><a href="#login">Login</a></li>
+            
+        </ul>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="hero-tagline">Selamat datang di ruang digital kami — jejak karya, rasa, dan cerita dalam website ini.</p>
+            <a href="#portfolio" class="button">our journey</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section about-me">
+            <h2>about us</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Foto Profil Carlhenlia" class="profile-pic">
+                <p> Kami adalah mahasiswa Matematika Sains FMIPA yang merangkai kode dan kenangan dalam satu ruang digital.
+                    Website ini kami ciptakan sebagai jejak perjalanan, sekaligus tugas dari mata kuliah Komputer dan Pemrograman.</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section portfolio">
+            <h2>Portofolio </h2>
+            <div class="portfolio-slider-container">
+                <div class="portfolio-slide">
+                    <div class="portfolio-item">
+                        <img src="tilla.png" alt="Tilla">
+                        <h3>MARDHATILLA</h3>
+                        <p>"Jangan bandingkan prosesmu dengan hasil orang lain."</p>
+                        <a href="#" class="view-project-btn button" data-project-id="project1">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-slide">
+                    <div class="portfolio-item">
+                        <img src="carla.png" alt="Karya Gemas Kami 2">
+                        <h3>Putrisyah Carla Najmazky</h3>
+                        <p>Seorang pencinta logika yang gemar merangkai kata, tenang di balik angka, hangat di atas panggung.</p>
+                        <a href="#" class="view-project-btn button" data-project-id="project2">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-slide">
+                    <div class="portfolio-item">
+                        <img src="hengki.png" alt="Desain Ceria Kami 3">
+                        <h3>Hengki Afriyan</h3>
+                        <p>Menggambar bukan sekedar hal yang ku suka Tapi cara untuk bercerita tanpa berbicara</p>
+                        <a href="#" class="view-project-btn button" data-project-id="project3">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-nav">
+                <button class="prev-slide button">&lt; Sebelumnya</button>
+                <button class="next-slide button">Selanjutnya &gt;</button>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Hubungi Kami</h2>
+            <p>Jangan ragu untuk menghubungi kami!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                <button type="submit" class="button">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Carlhenlia.</p>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-project-details">
+                <h3 id="modal-project-title">Judul Proyek</h3>
+                <img id="modal-project-img" src="" alt="Gambar Proyek">
+                <p id="modal-project-full-desc">Ini adalah deskripsi lengkap proyek yang akan muncul di modal. Anda bisa menambahkan lebih banyak paragraf, daftar, atau tautan di sini. Misalnya, Anda bisa menjelaskan peran Anda dalam proyek, tantangan yang dihadapi, dan hasil akhir.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
